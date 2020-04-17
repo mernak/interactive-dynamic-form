@@ -1,0 +1,6 @@
+
+<select  [name]="controlData.controlName" [id]="controlData.controlName" (change)="onchange($event.target.value)">
+  <option value="">{{controlData.placeholder}}</option>
+  <option *ngFor="let option of controlData.options" [value]="option.value">{{option.optionName}}</option>
+</select>
+

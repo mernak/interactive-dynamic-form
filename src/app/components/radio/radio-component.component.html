@@ -1,0 +1,5 @@
+<div *ngFor="let option of controlData.options" class="form-group row" (change)="onchange($event.target.value)">
+  <input  [type]="controlData.controlType" [name]="controlData.controlName"
+          [value]="option.value" >
+  <label [for]="controlData.controlName"> {{option.optionName}}</label>
+</div>
